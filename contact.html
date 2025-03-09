@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اتصل بنا - رمضان في مدرسة الحياة
-</title>
+  <title>اتصل بنا - رمضان في مدرسة الحياة</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
-<img class="hayat" src="/home/a2m/Bureau/logo.png" ALT="" />
-      <h1>اتصل بنا</h1>
+<img class="hayat" src="/home/a2m/Musique/logo.png" ALT="" />
+      <h1 id="header-title">اتصل بنا</h1>
       <button id="language-toggle">Français</button>
     </div>
   </header>
@@ -21,12 +21,12 @@
   <nav>
     <div class="container">
       <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="prayer-times.html">أوقات الصلاة</a></li>
-        <li><a href="mosques.html">المساجد</a></li>
-        <li><a href="advice.html">نصائح رمضانية</a></li>
-        <li><a href="recipes.html">فئات متنوعة</a></li>
-        <li><a href="contact.html">اتصل بنا</a></li>
+        <li><a href="index.html" id="nav-home">الرئيسية</a></li>
+        <li><a href="prayer-times.html" id="nav-prayer-times">أوقات الصلاة</a></li>
+        <li><a href="mosques.html" id="nav-mosques">المساجد</a></li>
+        <li><a href="advice.html" id="nav-advice">نصائح رمضانية</a></li>
+        <li><a href="recipes.html" id="nav-recipes">فئات متنوعة</a></li>
+        <li><a href="contact.html" id="nav-contact">اتصل بنا</a></li>
       </ul>
     </div>
   </nav>
@@ -34,25 +34,18 @@
   <main>
     <section id="contact" class="section">
       <div class="container">
-        <h2>اتصل بنا</h2>
-        <p>نحن هنا للإجابة على جميع استفساراتك. يرجى ملء النموذج أدناه وسنرد عليك في أقرب وقت ممكن.</p>
+        <h2 class="h2" id="contact-title">اتصل بنا</h2>
+        <p id="contact-description">نحن هنا للإجابة على جميع استفساراتك. يرجى ملء النموذج أدناه وسنرد عليك في أقرب وقت ممكن.</p>
 
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name">الاسم الكامل</label>
-            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">البريد الإلكتروني</label>
-            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">الرسالة</label>
-            <textarea id="message" name="message" rows="5" placeholder="أدخل رسالتك" required></textarea>
-          </div>
-
+        <form action="https://formspree.io/f/xdkenqgq" method="POST">
+          <label class="h2" for="email">
+            البريد الإلكتروني:
+            <input type="email" id="email" name="email" required>
+          </label>
+          <label class="h2" for="message">
+            الرسالة:
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </label>
           <button type="submit">إرسال</button>
         </form>
       </div>
@@ -61,10 +54,10 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 موقع رمضان. جميع الحقوق محفوظة.Abdalmalik Dahane</p>
+      <p id="footer-text">© 2025 موقع رمضان. جميع الحقوق محفوظة. Abdalmalik Dahane</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/home/a2m/Musique/script.js"></script>
 </body>
 </html>
